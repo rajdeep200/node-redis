@@ -2,7 +2,6 @@ import { Request, Response } from "express";
 import RedisService from '../services/redisService'
 
 class RedisController {
-
     static async storeData(req:Request, res:Response){
         try {
             const {key, value} = req.body
